@@ -1,0 +1,49 @@
+.sidebar-container {
+    position: static;
+    height: 100vh;
+    background-color: var(--background-color);
+    min-width: 300px;
+    max-width: 300px;
+}
+
+.sidebar-div2 {
+    margin-top: 50px;
+}
+
+.sidebar-list {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-list li {
+    margin: 10px 5px;
+    margin-left: 0;
+    padding-left: 10px;
+    
+    transition: all .3s ease-in-out;
+    cursor: default;
+    color: var(--font-color);
+    
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+    border-left: 3px solid transparent;
+    
+    font-family: "MinecraftFont";
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sidebar-list li.active {
+    border-left-color: white;
+}
+
+.sidebar-list li:hover {
+    border-left-color: white;
+}
+
+.sidebar-list li span {
+    display: block;
+    font-size: 13px;
+}

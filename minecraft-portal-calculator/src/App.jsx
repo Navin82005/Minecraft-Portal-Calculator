@@ -1,7 +1,7 @@
 import { invoke } from "@tauri-apps/api/core";
 
 // ROUTER
-import { HashRouter } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 // HOOKS
 import { useState } from "react";
@@ -11,6 +11,10 @@ import "./App.css";
 
 // PAGES
 import Calculator from "./Calculator";
+import Home from "./pages/Home/Home";
+
+// COMPONENTS
+import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
   const [greetMsg, setGreetMsg] = useState("");
@@ -23,9 +27,12 @@ function App() {
 
   return (
     <HashRouter>
-      <main className="container" >
+      <main className="app-container">
+        <Sidebar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
       </main>
-      <Calculator />
     </HashRouter>
   );
 }

@@ -1,0 +1,40 @@
+.navio-logo-container {
+    font-family: "MinecraftTen", sans-serif;
+    padding: 10px 20px;
+    color: var(--font-color);
+    font-weight: bold;
+    font-size: x-large;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.navio-logo-image {
+    height: 48px;
+    width: 48px;
+    margin-right: 10px;
+}
+
+.navio-logo-image img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.navio-logo-text {
+    font-family: 'MinecraftTenV2', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: auto;
+    /* margin-top: 5px; */
+    /* margin-bottom: auto; */
+}
+.navio-logo-text span {
+    display: block;
+    font-family: 'MinecraftFont', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: auto;
+}

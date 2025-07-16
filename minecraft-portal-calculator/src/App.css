@@ -1,0 +1,39 @@
+:root {
+  --font-color: #FAF9F6;
+  --background-color: #333;
+}
+
+@font-face {
+  font-family: "MinecraftTenV2";
+  src: url("./assets/fonts/MinecraftTen-v2.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MinecraftTen";
+  src: url("./assets/fonts/MinecraftTen-VGORe.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MinecraftFont";
+  src: url("./assets/fonts/segoeuithibd.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "MinecraftFont";
+  src: url("./assets/fonts/segoeuithis.ttf");
+  font-weight: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "MinecraftFont", sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+}
