@@ -37,3 +37,15 @@ body {
   display: flex;
   flex-direction: row;
 }
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-default {
+  cursor: default;
+}
+
+.cursor-none {
+  cursor: none;
+}

@@ -10,8 +10,9 @@ import { useState } from "react";
 import "./App.css";
 
 // PAGES
-import Calculator from "./Calculator";
 import Home from "./pages/Home/Home";
+import Calculator from "./pages/Calculator/Calculator";
+import Coordinates from "./pages/Coordinates/Coordinates";
 
 // COMPONENTS
 import Sidebar from "./components/Sidebar/Sidebar";
@@ -31,6 +32,8 @@ function App() {
         <Sidebar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/calculator" element={<Calculator />} />
+          <Route path="/coordinates" element={<Coordinates />} />
         </Routes>
       </main>
     </HashRouter>
